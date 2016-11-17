@@ -11,21 +11,20 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String NOTE_ID_EXTRA = "info.yelinhtun.notebook.Identifier";
+    public static final String NOTE_TITLE_EXTRA = "info.yelinhtun.notebook.Title";
+    public static final String NOTE_MESSAGE_EXTRA = "info.yelinhtun.notebook.Message";
+    public static final String NOTE_CATEGORY_EXTRA = "info.yelinhtun.notebook.Category";
+    public static final String NOTE_FRAGMENT_T0_LOAD_EXTRA = "info.yelinhtun.notebook.FRAGMENT_TO_LOAD";
+
+    public enum FragmentToLaunch { VIEW, EDIT }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     @Override
